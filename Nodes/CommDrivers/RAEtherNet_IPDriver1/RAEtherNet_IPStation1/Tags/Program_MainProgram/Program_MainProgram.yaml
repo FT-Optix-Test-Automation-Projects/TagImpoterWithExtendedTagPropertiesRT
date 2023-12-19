@@ -1,0 +1,49 @@
+Name: 'Program:MainProgram'
+Type: FolderType
+Children:
+- Name: MainProgram_DINT_MetaData
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.MainProgram_DINT_MetaData"
+  - Name: ns=0;EURange
+    Type: RangeType
+    DataType: Range
+    WriteMask: ArrayDimensions|BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel|ValueRank|ValueForVariableType
+    ValueRank: ScalarOrOneDimension
+    Children:
+    - Name: Low
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+    - Name: High
+      Type: BaseVariableType
+      DataType: Double
+      ReferenceType: HasProperty
+      Value: 0.0
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    WriteMask: ArrayDimensions|BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel|ValueRank|ValueForVariableType
+    ValueRank: ScalarOrOneDimension
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: -1
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}

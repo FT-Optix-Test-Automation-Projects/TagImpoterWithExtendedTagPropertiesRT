@@ -1,0 +1,33 @@
+Name: 'Program:SafetyProgram'
+Type: FolderType
+Children:
+- Name: SafetyProgram_STRING_MetaData
+  Type: RAEtherNetIPTag
+  DataType: String
+  Value: ""
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:SafetyProgram.SafetyProgram_STRING_MetaData"
+  - Name: ns=0;EngineeringUnits
+    Type: EUInformationType
+    DataType: EUInformation
+    WriteMask: ArrayDimensions|BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel|ValueRank|ValueForVariableType
+    ValueRank: ScalarOrOneDimension
+    Children:
+    - Name: UnitId
+      Type: BaseVariableType
+      DataType: Int32
+      ReferenceType: HasProperty
+      Value: -1
+    - Name: DisplayName
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+    - Name: Description
+      Type: BaseVariableType
+      DataType: LocalizedText
+      ReferenceType: HasProperty
+      Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
